@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+int main(){
+    char ch;
+    scanf("%c",&ch);
+
+    if(ch >='a' && ch <= 'z'){
+        ch = ch - 32;
+        printf("ALPHA\n");
+        printf("IS SMALL\n");
+    }else if(ch >='A' && ch <= 'Z'){
+        ch = ch + 32;
+        printf("ALPHA\n");
+         printf("IS CAPITAL\n");
+    }else{
+        printf("IS DIGIT\n");
+    }
+    return 0;
+}
