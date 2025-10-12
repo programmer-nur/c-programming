@@ -1,9 +1,9 @@
 #include <stdio.h>
-
+#include <limits.h>
 int main()
 {
     int n, x;
-    int max = 0;
+    int max = INT_MIN;
     scanf("%d", &n);
     for (int i = 1; i <= n; i++)
     {
