@@ -10,13 +10,14 @@ int main()
         int n;
         scanf("%d", &n);
 
-        while (n != 0)
+        do
         {
             printf("%d ", n % 10);
             n /= 10;
-        }
+        } while (n != 0);
+
         printf("\n");
     }
 
     return 0;
-} 
+}
