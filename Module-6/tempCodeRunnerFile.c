@@ -1,1 +1,2 @@
-for 
+
+        int reverse = n % 10;
