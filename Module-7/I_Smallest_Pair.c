@@ -3,15 +3,12 @@
 int main() {
   int n;
   scanf("%d", &n);
+  int j = n + 1;
   int arr[n];
-  int sorting[n];
-  for (int i = 0; i < n; i++) {
-    scanf("%d", &arr[i]);
-  }
-  sorting[0] = arr[0];
 
- 
-  
+  for (int i = 0; i < n; i++) {
+    /* code */
+  }
 
   return 0;
 }
