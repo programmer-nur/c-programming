@@ -1,25 +1,36 @@
 #include <stdio.h>
 #include <string.h>
 int main() {
-  int n;
-  scanf("%d", &n);
+  int tc;
+  scanf("%d", &tc);
+  while (tc--) {
+    char S[55], T[55];
+    scanf("%s %s", S, T);
+    // printf("%s\n%s", S, T);
+    int s_len = strlen(S); // 4
+    int t_len = strlen(T); // 8
 
-  char str1[101];
-  char str2[101];
-  for (int i = 0; i < n; i++) {
-    scanf("%s %s", str1, str2);
+    int i = 0, j = 0;
+    while (i < s_len && j < t_len) // common part
+    {
+      printf("%c%c", S[i], T[j]);
+      i++;
+      j++;
+    }
+
+    // S string big
+    while (i < s_len) {
+      printf("%c", S[i]);
+      i++;
+    }
+
+    // T string big
+    while (j < t_len) {
+      printf("%c", T[j]);
+      j++;
+    }
+    printf("\n");
   }
-
-  int str1_len = strlen(str1);
-  int str2_len = strlen(str2);
-
-  char main_str[str1_len + str2_len];
-
-  for (int i = 0; i < str1_len + str2_len; i++) {
-    main_str[i] = str1[i];
-  }
-
-  printf("%s", main_str);
 
   return 0;
 }

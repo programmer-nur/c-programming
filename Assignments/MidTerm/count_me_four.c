@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 int main() {
-  char str[1001];
+  char str[10001];
   scanf("%s", str);
   int length = strlen(str);
 
@@ -13,7 +13,7 @@ int main() {
   }
 
   for (int i = 0; i < 26; i++) {
-    if(feq[i] > 0){
+    if (feq[i] > 0) {
       printf("%c : %d\n", i + 'a', feq[i]);
     }
   }
